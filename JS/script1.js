@@ -1,10 +1,6 @@
 // Отримуємо всі абзаци та обчислюємо їх довжину
 let paragraphs = document.querySelectorAll('p');
-let pArray = [];
-
-paragraphs.forEach(paragraph => {
-    pArray.push(paragraph.innerText.length);  // Додаємо довжину кожного абзацу в масив
-});
+let pArray = Array.from(paragraphs, p => p.innerText.length);
 
 console.log(pArray);  // Виводимо масив з довжинами абзаців
 
