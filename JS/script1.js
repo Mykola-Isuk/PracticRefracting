@@ -20,7 +20,7 @@ console.log("Мінімальне: " + min);
 
 // Підрахунок кількості парних та непарних елементів
 let evenCount = arr.filter(el => el % 2 === 0).length;
-let oddCount = arr.filter(el => el % 2 !== 0).length;
+let oddCount = arr.length - evenCount;
 
 console.log("Кількість:");
 console.log("Парні: " + evenCount);
